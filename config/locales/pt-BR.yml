@@ -1,0 +1,24 @@
+pt-BR:
+  home: "Página Inicial"
+  welcome: "Seja Bem-Vindo!!"
+  messages:
+    welcome: "Para começar, selecione uma das opções abaixo:"
+    menu: "Este é o CriptoWallet, um site para você cadastrar e acompanhar suas criptomoedas"
+  titles:
+    new_coin: "Nova moeda"
+    editing_coin: "Editando moeda"
+    new_mining_type: "Novo tipo de mineração"
+    editing_mining_type: "Editando tipo de mineração"
+  actual_locale: "Português do Brasil"
+  hello: "Olá Mundo!"
+  links:
+    show: "Mostrar"
+    edit: "Editar"
+    delete: "Apagar"
+    back: "Voltar"
+    register: "Cadastrar"
+  type:
+    description: "Descrição"
+    acronym: "Sigla"
+    url_image: "URL da imagem"
+    mining_type: "Tipo de mineração da moeda"

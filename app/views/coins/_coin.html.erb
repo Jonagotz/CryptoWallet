@@ -1,0 +1,6 @@
+<tr>
+  <th scope="row"><%= coin.description %></th>
+  <td><%= coin.acronym %></td>
+  <td><%= image_tag(coin.url_image, size: "25X25") rescue '' %></td>
+  <td><%= link_to t('links.show'), coin, class:"btn btn-primary" %></td>
+</tr>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CryptoWallet</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js" ></script>
+  </head>
+
+  <body>
+  <div class="container-fluid">
+    <ul class="nav justify-content-end">
+      <li>
+        <%= link_to t("home"), root_path, class:"nav-link"%>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Português', request.path + '?locale=pt-BR', class:"nav-link"%>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'English',  request.path + '?locale=en', class:"nav-link"%>
+      </li>
+  </ul>
+  
+    <%= yield %>
+  </div>
+  </body>
+</html>

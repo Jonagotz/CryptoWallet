@@ -1,0 +1,35 @@
+<p style="color: green"><%= notice %></p>
+
+
+<form>
+
+  <div class="form-group">
+    <%= label_tag nil, t("type.description"), style: "display: block" %>
+    <%= text_field_tag nil, @coin.description, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, t("type.acronym"), style: "display: block" %>
+    <%= text_field_tag nil, @coin.acronym, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, t("type.url_image"), style: "display: block" %>
+    <%= text_field_tag nil, @coin.url_image, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, t("type.mining_type"), style: "display: block" %>
+    <%= text_field_tag nil, @coin.mining_type_id, class:"form-control", disabled: true %>
+  </div>
+
+</form>
+<p></p>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <%= link_to t('links.show'), edit_coin_path(@coin), class:"btn btn-primary", type:"button", class:"btn btn-secondary" %>
+  <%= link_to t('links.back'), coins_path, class:"btn btn-primary", type:"button", class:"btn btn-secondary" %>
+</div>
+<p>
+  <%= button_to t('links.delete'), @coin, method: :delete, class:"btn btn-danger" %>
+</p>
+
